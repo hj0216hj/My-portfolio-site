@@ -47,6 +47,17 @@ function createProjectCard(project) {
     card.onclick = function() {
         goToDetail(project.id);
     };
+
+    // 이미지 추가 
+    if (project.image) {
+        var img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        img.onerror = function() {
+            this.style.display = 'none'; // 이미지 로드 실패시 숨김
+        };
+        card.appendChild(img);
+    }
     
     // 제목
     var title = document.createElement('h3');

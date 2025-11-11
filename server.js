@@ -14,11 +14,27 @@ app.use(bodyParser.json());
 var projects = [
     {
         id: 1,
-        title: "포트폴리오 사이트",
-        description: "나만의 포트폴리오 관리 사이트",
-        date: "2025-11",
-        skills: ["HTML", "CSS", "JavaScript", "Node.js"],
-        image: "/images/project1.jpg"
+        title: "Cult Fight",
+        description: "2D 횡스크롤 액션 도트 그래픽 게임",
+        date: "2024-12",
+        skills: ["Unity", "C#"],
+        image: "/images/CultFight.jpg"
+    },
+    {
+        id: 2,
+        title: "나루나루",
+        description: "지역 맛집찾기 어플",
+        date: "2025-06",
+        skills: ["Flutter", "Nodejs","MongoDB","ChatGPT","kakaoAPI"],
+        image: "/images/NaruNaru.jpg"
+    },
+    {
+        id: 3,
+        title: "My Trip Planner",
+        description: "여행을 계획하고 관리하는 어플",
+        date: "2025-06",
+        skills: ["Android Studio", "Java","Firebase Realtime Database 및 Firestore"],
+        image: "/images/MyTripPlanner.jpg"
     }
 ];
 
