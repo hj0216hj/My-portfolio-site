@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cult Fight - 나의 포트폴리오</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="/index.html">홈</a></li>
+                <li><a href="/about.html">소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <a href="/index.html" class="back-button">← 목록으로</a>
+        
+        <div class="detail-container">
+            <!-- 프로젝트 헤더 -->
+            <div class="project-header">
+                <h1>Cult Fight</h1>
+                <p class="project-date">📅 2024-12</p>
+                <p class="project-subtitle">2D 횡스크롤 액션 도트 그래픽 게임</p>
+            </div>
+
+            <!-- 메인 이미지 -->
+            <div class="project-image-container">
+                <img src="/images/CultFight.jpg" alt="Cult Fight">
+            </div>
+
+            <!-- 기술 스택 -->
+            <div class="detail-section">
+                <h2>🛠️ 사용 기술</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">C#</span>
+                </div>
+            </div>
+
+            <!-- 프로젝트 개요 -->
+            <div class="detail-section">
+                <h2>📋 프로젝트 개요</h2>
+                <p>
+                    Cult Fight는 2D 횡스크롤 액션 게임으로, 도트 그래픽 스타일로 제작되었습니다. 
+                    플레이어는 다양한 적들과 싸우며 스테이지를 진행하고, 각 스테이지마다 등장하는 
+                    보스를 물리쳐야 합니다.
+                </p>
+            </div>
+
+            <!-- 주요 기능 -->
+            <div class="detail-section">
+                <h2>✨ 주요 기능</h2>
+                <ul>
+                    <li>부드러운 캐릭터 애니메이션</li>
+                    <li>다양한 적 AI 패턴</li>
+                    <li>스테이지별 보스전</li>
+                    <li>아이템 및 업그레이드 시스템</li>
+                    <li>도트 그래픽 기반의 레트로 스타일</li>
+                </ul>
+            </div>
+
+            <!-- 개발 과정 -->
+            <div class="detail-section">
+                <h2>💻 개발 과정</h2>
+                <p>
+                    Unity 엔진을 사용하여 개발했으며, C# 스크립트로 게임 로직을 구현했습니다. 
+                    특히 캐릭터의 부드러운 움직임을 위해 애니메이션 시스템을 세밀하게 조정했고, 
+                    Physics2D를 활용하여 자연스러운 충돌 처리를 구현했습니다.
+                </p>
+                <p>
+                    적 AI는 FSM(Finite State Machine) 패턴을 사용하여 상태 기반으로 설계했으며, 
+                    각 적마다 고유한 행동 패턴을 부여했습니다.
+                </p>
+            </div>
+
+            <!-- 도전 과제 및 해결 -->
+            <div class="detail-section">
+                <h2>🎯 도전 과제 및 해결</h2>
+                <p>
+                    <strong>문제:</strong> 캐릭터와 적의 충돌 처리에서 간헐적으로 관통 현상이 발생했습니다.
+                </p>
+                <p>
+                    <strong>해결:</strong> Rigidbody2D의 Collision Detection을 Continuous로 변경하고, 
+                    Physics2D 설정에서 Fixed Timestep을 조정하여 문제를 해결했습니다.
+                </p>
+            </div>
+
+            <!-- 배운 점 -->
+            <div class="detail-section">
+                <h2>📚 배운 점</h2>
+                <p>
+                    게임 개발의 전반적인 과정을 경험할 수 있었고, 특히 캐릭터 애니메이션과 
+                    충돌 처리에 대해 깊이 이해하게 되었습니다. 또한 게임의 난이도 조절과 
+                    플레이어 경험 설계의 중요성을 배웠습니다.
+                </p>
+            </div>
+
+            <!-- 스크린샷/추가 이미지 (선택사항) -->
+            <div class="detail-section">
+                <h2>📸 스크린샷</h2>
+                <div class="screenshot-grid">
+                    <img src="/images/cultfight-1.jpg" alt="게임플레이 1">
+                    <img src="/images/cultfight-2.jpg" alt="게임플레이 2">
+                    <img src="/images/cultfight-3.jpg" alt="보스전">
+                </div>
+                <p style="color: #7f8c8d; font-size: 0.9rem;">
+                    * 스크린샷 이미지를 추가하려면 public/images/ 폴더에 이미지를 넣으세요
+                </p>
+            </div>
+
+            <!-- 링크 -->
+            <div class="detail-section">
+                <h2>🔗 링크</h2>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/cult-fight" target="_blank" class="project-link-btn">
+                        📁 GitHub 저장소
+                    </a>
+                    <!-- <a href="#" target="_blank" class="project-link-btn">
+                        🚀 플레이 하기
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

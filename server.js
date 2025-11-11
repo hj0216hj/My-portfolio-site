@@ -18,7 +18,8 @@ var projects = [
         description: "2D 횡스크롤 액션 도트 그래픽 게임",
         date: "2024-12",
         skills: ["Unity", "C#"],
-        image: "/images/CultFight.jpg"
+        image: "/images/CultFight.jpg",
+        link: "/projects/cultfight.html"
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ var projects = [
         description: "지역 맛집찾기 어플",
         date: "2025-06",
         skills: ["Flutter", "Nodejs","MongoDB","ChatGPT","kakaoAPI"],
-        image: "/images/NaruNaru.jpg"
+        image: "/images/NaruNaru.jpg",
+        link: "/projects/narunaru.html"
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ var projects = [
         description: "여행을 계획하고 관리하는 어플",
         date: "2025-06",
         skills: ["Android Studio", "Java","Firebase Realtime Database 및 Firestore"],
-        image: "/images/MyTripPlanner.jpg"
+        image: "/images/MyTripPlanner.jpg",
+        link: "/projects/mytripplanner.html"
     }
 ];
 

@@ -45,17 +45,14 @@ function createProjectCard(project) {
     var card = document.createElement('div');
     card.className = 'project-card';
     card.onclick = function() {
-        goToDetail(project.id);
+        goToProjectPage(project.link);  // ← 변경됨!
     };
-
-    // 이미지 추가 
+    
+    // 이미지
     if (project.image) {
         var img = document.createElement('img');
         img.src = project.image;
         img.alt = project.title;
-        img.onerror = function() {
-            this.style.display = 'none'; // 이미지 로드 실패시 숨김
-        };
         card.appendChild(img);
     }
     
@@ -92,10 +89,12 @@ function createProjectCard(project) {
     return card;
 }
 
-// 상세 페이지로 이동
-function goToDetail(projectId) {
-    window.location.href = 'detail.html?id=' + projectId;
+// 프로젝트 페이지로 이동 (새로 추가!)
+function goToProjectPage(link) {
+    window.location.href = link;
 }
+
+// === 아래는 detail.html에서 사용하는 함수들 (나중을 위해 유지) ===
 
 // URL에서 파라미터 가져오기
 function getUrlParameter(name) {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나루나루 - 나의 포트폴리오</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="/index.html">홈</a></li>
+                <li><a href="/about.html">소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <a href="/index.html" class="back-button">← 목록으로</a>
+        
+        <div class="detail-container">
+            <!-- 프로젝트 헤더 -->
+            <div class="project-header">
+                <h1>나루나루</h1>
+                <p class="project-date">📅 2025-06</p>
+                <p class="project-subtitle">지역 맛집찾기 어플</p>
+            </div>
+
+            <!-- 메인 이미지 -->
+            <div class="project-image-container">
+                <img src="/images/NaruNaru.jpg" alt="나루나루">
+            </div>
+
+            <!-- 기술 스택 -->
+            <div class="detail-section">
+                <h2>🛠️ 사용 기술</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">ChatGPT API</span>
+                    <span class="skill-tag">Kakao API</span>
+                </div>
+            </div>
+
+            <!-- 프로젝트 개요 -->
+            <div class="detail-section">
+                <h2>📋 프로젝트 개요</h2>
+                <p>
+                    나루나루는 사용자의 위치 기반으로 주변 맛집을 추천해주는 모바일 어플리케이션입니다. 
+                    ChatGPT API를 활용한 AI 맞춤형 추천 시스템과 카카오맵 API를 통한 
+                    직관적인 지도 인터페이스를 제공합니다.
+                </p>
+            </div>
+
+            <!-- 주요 기능 -->
+            <div class="detail-section">
+                <h2>✨ 주요 기능</h2>
+                <ul>
+                    <li>GPS 기반 주변 맛집 검색</li>
+                    <li>ChatGPT API를 활용한 개인화된 맛집 추천</li>
+                    <li>카카오맵 API 연동으로 실시간 위치 확인</li>
+                    <li>사용자 리뷰 및 평점 시스템</li>
+                    <li>즐겨찾기 및 방문 기록 관리</li>
+                    <li>음식 카테고리별 필터링</li>
+                </ul>
+            </div>
+
+            <!-- 개발 과정 -->
+            <div class="detail-section">
+                <h2>💻 개발 과정</h2>
+                <p>
+                    <strong>프론트엔드:</strong> Flutter를 사용하여 iOS와 Android를 동시에 지원하는 
+                    크로스 플랫폼 앱으로 개발했습니다. Provider 패턴을 사용하여 상태 관리를 구현했습니다.
+                </p>
+                <p>
+                    <strong>백엔드:</strong> Node.js와 Express로 RESTful API 서버를 구축했으며, 
+                    MongoDB를 사용하여 사용자 데이터와 리뷰 정보를 저장했습니다.
+                </p>
+                <p>
+                    <strong>API 연동:</strong> ChatGPT API를 통해 사용자의 취향을 분석하고 
+                    맞춤형 맛집을 추천하는 기능을 구현했으며, 카카오맵 API로 지도와 위치 서비스를 
+                    통합했습니다.
+                </p>
+            </div>
+
+            <!-- 도전 과제 및 해결 -->
+            <div class="detail-section">
+                <h2>🎯 도전 과제 및 해결</h2>
+                <p>
+                    <strong>문제:</strong> ChatGPT API와 카카오맵 API의 비동기 처리가 복잡하고, 
+                    간혹 응답 시간이 길어져 사용자 경험이 저하되는 문제가 있었습니다.
+                </p>
+                <p>
+                    <strong>해결:</strong> async/await 패턴을 사용하여 비동기 코드를 깔끔하게 정리했고, 
+                    로딩 인디케이터를 추가하여 사용자에게 진행 상황을 명확히 표시했습니다. 
+                    또한 자주 사용되는 데이터는 캐싱하여 API 호출을 최소화했습니다.
+                </p>
+            </div>
+
+            <!-- 배운 점 -->
+            <div class="detail-section">
+                <h2>📚 배운 점</h2>
+                <p>
+                    외부 API 연동 방법과 데이터베이스 설계에 대해 실무적인 경험을 쌓았습니다. 
+                    특히 사용자 경험을 고려한 UI/UX 디자인의 중요성을 깨달았으며, 
+                    비동기 프로그래밍과 에러 핸들링의 중요성을 배웠습니다.
+                </p>
+            </div>
+
+            <!-- 링크 -->
+            <div class="detail-section">
+                <h2>🔗 링크</h2>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/narunaru" target="_blank" class="project-link-btn">
+                        📁 GitHub 저장소
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
