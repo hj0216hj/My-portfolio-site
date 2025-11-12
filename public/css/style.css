@@ -46,9 +46,7 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #3498db;
-}
+
 
 /* 메인 콘텐츠 */
 main {
@@ -184,7 +182,7 @@ footer {
 
 .back-button {
     display: inline-block;
-    background: #3498db;
+    background: #2c3e50;;
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
@@ -193,9 +191,6 @@ footer {
     transition: background 0.3s;
 }
 
-.back-button:hover {
-    background: #2980b9;
-}
 
 /* 소개 페이지 스타일 */
 .about-container {
@@ -230,4 +225,179 @@ footer {
     content: "▸ ";
     color: #3498db;
     font-weight: bold;
+}
+/* detail-section 스타일 추가 */
+.detail-section {
+    margin-bottom: 3rem;
+}
+
+.detail-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.detail-section h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #34495e;
+}
+
+.detail-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.detail-section ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.detail-section ul li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.detail-section ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.detail-section ol li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* 프로젝트 헤더 스타일 */
+.project-header {
+    margin-bottom: 2rem;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.project-date {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.project-subtitle {
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* 스킬 태그 스타일 */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 프로젝트 이미지 컨테이너 */
+.project-image-container {
+    margin: 2rem 0;
+}
+
+.project-image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 스크린샷 그리드 */
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 프로젝트 링크 버튼 */
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.project-link-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project-link-btn:hover {
+    background: #2980b9;
+}
+
+/* 스크린샷 컨테이너 스타일 */
+.screenshot-container {
+    margin: 1.5rem auto;
+    max-width: 800px; /* 최대 너비 제한 */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);   
+}
+
+.screenshot-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 반응형: 모바일에서는 더 작게 */
+@media (max-width: 768px) {
+    .screenshot-container {
+        max-width: 100%;
+    }
+}
+
+/* 프로젝트 비디오 컨테이너 */
+.project-video-container {
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.project-video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #000;
+}
+
+.project-video-container video:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
