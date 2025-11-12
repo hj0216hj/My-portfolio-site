@@ -17,7 +17,7 @@ var projects = [
         title: "Cult Fight",
         description: "2D 횡스크롤 액션 도트 그래픽 게임",
         date: "2024-12",
-        skills: ["Unity", "C#"],
+        skills: ["Unity", "C#", "Visual Studio 2022"],
         image: "/images/CultFight.jpg",
         link: "/projects/cultfight.html"
     },
