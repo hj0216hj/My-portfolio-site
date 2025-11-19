@@ -328,5 +328,30 @@
     <footer>
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
+    <script>
+        // 맨 위로 버튼 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollBtn = document.createElement('button');
+            scrollBtn.className = 'scroll-to-top';
+            scrollBtn.innerHTML = '↑';
+            scrollBtn.setAttribute('aria-label', '맨 위로');
+            document.body.appendChild(scrollBtn);
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollBtn.classList.add('show');
+                } else {
+                    scrollBtn.classList.remove('show');
+                }
+            });
+            
+            scrollBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

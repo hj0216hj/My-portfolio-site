@@ -1,7 +1,35 @@
 // 페이지 로드 시 실행
 document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
+    initScrollToTop();
 });
+
+// 맨 위로 버튼 초기화
+function initScrollToTop() {
+    // 맨 위로 버튼 생성
+    var scrollBtn = document.createElement('button');
+    scrollBtn.className = 'scroll-to-top';
+    scrollBtn.innerHTML = '↑';
+    scrollBtn.setAttribute('aria-label', '맨 위로');
+    document.body.appendChild(scrollBtn);
+    
+    // 스크롤 이벤트
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+    
+    // 클릭 이벤트
+    scrollBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 // 프로젝트 목록 불러오기
 function loadProjects() {
