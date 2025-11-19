@@ -45,7 +45,7 @@ function createProjectCard(project) {
     var card = document.createElement('div');
     card.className = 'project-card';
     card.onclick = function() {
-        goToProjectPage(project.link);  // ← 변경됨!
+        goToProjectPage(project.link);
     };
     
     // 이미지
@@ -55,6 +55,10 @@ function createProjectCard(project) {
         img.alt = project.title;
         card.appendChild(img);
     }
+    
+    // 콘텐츠 래퍼
+    var contentDiv = document.createElement('div');
+    contentDiv.className = 'project-card-content';
     
     // 제목
     var title = document.createElement('h3');
@@ -80,16 +84,19 @@ function createProjectCard(project) {
         skillsDiv.appendChild(skillTag);
     });
     
-    // 카드에 요소 추가
-    card.appendChild(title);
-    card.appendChild(date);
-    card.appendChild(description);
-    card.appendChild(skillsDiv);
+    // 콘텐츠에 요소 추가
+    contentDiv.appendChild(title);
+    contentDiv.appendChild(date);
+    contentDiv.appendChild(description);
+    contentDiv.appendChild(skillsDiv);
+    
+    // 카드에 콘텐츠 추가
+    card.appendChild(contentDiv);
     
     return card;
 }
 
-// 프로젝트 페이지로 이동 (새로 추가!)
+// 프로젝트 페이지로 이동
 function goToProjectPage(link) {
     window.location.href = link;
 }
