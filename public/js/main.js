@@ -33,15 +33,38 @@ function initScrollToTop() {
 
 // 프로젝트 목록 불러오기
 function loadProjects() {
-    // 서버에서 프로젝트 데이터 가져오기
-    fetch('/api/projects')
-        .then(response => response.json())
-        .then(projects => {
-            displayProjects(projects);
-        })
-        .catch(error => {
-            console.error('프로젝트 로딩 실패:', error);
-        });
+    // 정적 데이터로 직접 프로젝트 정보 정의
+    const projects = [
+        {
+            id: 1,
+            title: "Cult Fight",
+            description: "2D 횡스크롤 액션 도트 그래픽 게임",
+            date: "2024-12",
+            skills: ["Unity", "C#", "Visual Studio 2022"],
+            image: "images/CultFight.jpg",
+            link: "cultfight.html"
+        },
+        {
+            id: 2,
+            title: "나루나루",
+            description: "지역 맛집찾기 어플",
+            date: "2025-06",
+            skills: ["Flutter", "Nodejs","MongoDB","ChatGPT","kakaoAPI"],
+            image: "images/NaruNaru.jpg",
+            link: "narunaru.html"
+        },
+        {
+            id: 3,
+            title: "My Trip Planner",
+            description: "여행을 계획하고 관리하는 어플",
+            date: "2025-06",
+            skills: ["Android Studio", "Java","Firebase Realtime Database 및 Firestore"],
+            image: "images/MyTripPlanner.jpg",
+            link: "mytripplanner.html"
+        }
+    ];
+    
+    displayProjects(projects);
 }
 
 // 프로젝트 목록 화면에 표시
@@ -81,6 +104,10 @@ function createProjectCard(project) {
         var img = document.createElement('img');
         img.src = project.image;
         img.alt = project.title;
+        img.onerror = function() {
+            // 이미지 로드 실패 시 대체 배경 표시
+            this.style.display = 'none';
+        };
         card.appendChild(img);
     }
     
